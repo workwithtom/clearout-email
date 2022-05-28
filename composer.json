@@ -2,7 +2,7 @@
     "name": "workwithtom/clearout-email",
     "description": "Clearout email validation & verification protects your database from fake, disposable & bad email addresses.",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
