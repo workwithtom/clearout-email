@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Clearout email validation & verification plugin for Craft CMS 3.x
+ *
+ * Clearout email validation & verification Settings.twig
+ *
+ * @author    Work With Tom SRL
+ * @copyright Copyright (c) 2022 Work With Tom SRL
+ * @link      https://www.workwithtom.ro
+ * @package   ClearoutEmail
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("workwithtom\\clearoutemail\\assetbundles\\clearoutemail\\ClearoutEmail") %}
+
+{{ forms.textField({
+    label: 'Clearout App Token',
+    instructions: 'Enter Token found at app.clearout.io',
+    id: 'token',
+    name: 'token',
+    value: settings['token']})
+}}

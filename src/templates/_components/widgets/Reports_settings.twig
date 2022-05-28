@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Clearout email validation & verification plugin for Craft CMS
+ *
+ * Reports Widget Settings
+ *
+ * @author    Work With Tom SRL
+ * @copyright Copyright (c) 2022 Work With Tom SRL
+ * @link      https://www.workwithtom.ro
+ * @package   ClearoutEmail
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("workwithtom\\clearoutemail\\assetbundles\\clearoutemailvalidationverification\\ClearoutEmail") %}
+
+{{ forms.textField({
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
+}}

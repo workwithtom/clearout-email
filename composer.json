@@ -1,0 +1,41 @@
+{
+    "name": "workwithtom/clearout-email",
+    "description": "Clearout email validation & verification protects your database from fake, disposable & bad email addresses.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "clearout email validation &amp; verification"
+    ],
+    "support": {
+        "docs": "https://github.com/workwithtom/clearout-email/blob/master/README.md",
+        "issues": "https://github.com/workwithtom/clearout-email/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Work With Tom SRL",
+            "homepage": "https://www.workwithtom.ro"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "workwithtom\\clearoutemail\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Clearout email validation & verification",
+        "handle": "clearout-email",
+        "developer": "Work With Tom SRL",
+        "developerUrl": "https://www.workwithtom.ro",
+        "documentationUrl": "https://github.com/workwithtom/clearout-email/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/workwithtom/clearout-email/master/CHANGELOG.md",
+        "class": "workwithtom\\clearoutemail\\ClearoutEmailValidationVerification"
+    }
+}
